@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="250.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.momo.ContactController">
+    <headerText>
+        Please fill out the form with the require contact information. All fields are required.
+    </headerText>
+   <content>
+      <GridPane hgap="10" vgap="10">
+         <AnchorPane prefHeight="200.0" prefWidth="569.0">
+            <children>
+
+                <Label layoutX="48.0" layoutY="14.0" prefHeight="22.0" prefWidth="94.0" text="First Name:" textAlignment="RIGHT">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <TextField fx:id="txtFirstName" layoutX="150.0" layoutY="10.0" prefHeight="30.0" prefWidth="223.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+
+                <Label layoutX="53.0" layoutY="54.0" prefHeight="22.0" prefWidth="84.0" text="Last Name:" textAlignment="RIGHT">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtLastName" layoutX="150.0" layoutY="50.0" prefHeight="30.0" prefWidth="222.0">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+               </TextField>
+
+
+
+                <Label layoutX="16.0" layoutY="101.0" prefHeight="22.0" prefWidth="123.0" text="Phone Number:">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+               </Label>
+                <TextField fx:id="txtPhoneNumber" layoutX="150.0" layoutY="97.0" prefHeight="30.0" prefWidth="221.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+               </TextField>
+      
+                <Label layoutX="85.0" layoutY="154.0" prefHeight="22.0" prefWidth="57.0" text="Email:">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+               </Label>
+                <TextField fx:id="txtEmail" layoutX="151.0" layoutY="149.0" prefHeight="30.0" prefWidth="219.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+      
+                <Label layoutX="84.0" layoutY="197.0" prefHeight="22.0" prefWidth="60.0" text="Notes: ">
+                    <font>
+                        <Font name="Bell MT" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+               </Label>
+                <TextArea fx:id="arNotes" layoutX="152.0" layoutY="191.0" prefHeight="113.0" prefWidth="404.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+               </TextArea>
+            </children>
+         </AnchorPane>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+
+      </GridPane>
+   </content>
+
+</DialogPane>
